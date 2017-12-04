@@ -45,7 +45,7 @@ gulp.task('html', finish => {
   find.file(/\.html$/, path.join(__dirname, 'src'), files => {
     font.createFont(
       files,
-      path.join(__dirname, 'src/style/font/font.ttf'),
+      path.join(__dirname, 'src/style/font/ccc.ttf'),
       path.join(__dirname, 'dist/style/font/font.ttf')
     ).then(function () {
       gulp.src('./src/**/*.html')

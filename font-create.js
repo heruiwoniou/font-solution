@@ -10,7 +10,7 @@ export default {
 
       urls.forEach(url => {
         var str = fs.readFileSync(url, 'utf-8')
-        var reg = /[\u4E00-\u9FA5\uF900-\uFA2D]/ig, match
+        var reg = /[0-9,\u4E00-\u9FA5\uF900-\uFA2D]/ig, match
         while ((match = reg.exec(str))) {
           fonts.push(match[0])
         }
